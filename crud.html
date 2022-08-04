@@ -1,0 +1,51 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="crudcss.css">
+    </head>
+    
+    <body>
+        
+
+        
+        <div id="productBox" class="w-75 m-auto py-5">
+                Product Name     <input id="pname"  type="text"  class="form-control mb-4">
+                Product Price    <input id="price"  type="number"  class="form-control mb-4">
+                Product Category <input id="categ"  type="text" class="form-control mb-4">   
+                <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info"> Add Product </button>
+        </div>
+        
+        
+        <div class="w-75 m-auto py-3">
+            
+            <input onkeyup="searchProduct(this.value)" class="w-75 m-auto form-control" placeholder="Search" id="search">
+            
+            <table class="table my-5">
+                <thead>
+                    <th> index </th>
+                    <th> Product Name </th>
+                    <th> Product Price </th>
+                    <th> Product Category </th>
+                    <th> update </th>
+                    <th> delete </th>
+                </thead>
+                <tbody id="dataContainer">
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <script src="crudjs.js"></script>    
+    </body>
+    
+</html>
